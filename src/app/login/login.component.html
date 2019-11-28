@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="card card-container">
+  
+        <p class="profile-name-card"></p>
+        <form class="form-signin">
+            <span id="reauth-email" class="reauth-email"></span>
+            <input [(ngModel)] = "email" name="email" type="email" id="inputEmail" class="form-control" placeholder="E-mail"  required autofocus>
+            <input [(ngModel)] = "senha" name="senha" type="password" id="inputPassword" class="form-control" placeholder="Senha"  required>
+            <div id="remember" class="checkbox">
+                <label>
+                    <input type="checkbox" value="remember-me"> Lembrar-me
+                </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit" (click) = ' signInUser()'>Entrar</button>
+        </form>
+      <a href="#" class="forgot-password">
+            Esqueceu sua senha?
+        </a>
+    </div>
+  </div>
+  
+  <router-outlet></router-outlet>
+  
